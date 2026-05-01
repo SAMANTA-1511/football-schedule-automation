@@ -1,5 +1,5 @@
 # Use the lightweight Nginx web server
-FROM Nginx:alpine
+FROM nginx:alpine
 
 # Copy all the files from your folder into the Nginx web folder
 COPY . /usr/share/nginx/html
