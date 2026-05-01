@@ -1,19 +1,19 @@
-pipeline{
-   any agent 
-   Stages{
-    stage('Build Image') {
-        steps {
-            sh 'docker build -t football-schedule:latest .'
-        }
-    }
-    stage('Deploy Site') {
-        steps {
-                // Remove the old container if it exists
-                sh 'docker rm -f football-container || true'
-                // Run the new one using the 'foot-ball' image you just built
-                sh 'docker run -d --name football-container -p 8081:80 foot-ball:latest'
+pipeline {
+    agent any
+
+    stages {
+        stage('Build Image') {
+            steps {
+                // Check if the quote is closed here
+                sh 'docker build -t football-schedule:latest .'
             }
         }
-
-   }
+        stage('Run Container') {
+            steps {
+                // We stop the old one first so there is no conflict
+                sh 'docker rm -f football-schedule-container || true'
+                sh 'docker run -d --name football-schedule-container -p 8081:80 foot-ball:latest'
+            }
+        }
+    }
 }
