@@ -1,0 +1,115 @@
+{
+    "timezone": "IST",
+    "month": "February",
+    "year": 2026,
+    "matches": [
+        {
+            "id": "PL-2026-02-07-MUN-TOT",
+            "league": "Premier League",
+            "date": "2026-02-07",
+            "time": "18:00",
+            "home": "Manchester United",
+            "away": "Tottenham Hotspur",
+            "venue": "Old Trafford, Manchester"
+        },
+        {
+            "id": "PL-2026-02-07-ARS-SUN",
+            "league": "Premier League",
+            "date": "2026-02-07",
+            "time": "20:30",
+            "home": "Arsenal",
+            "away": "Sunderland",
+            "venue": "Emirates Stadium, London"
+        },
+        {
+            "id": "PL-2026-02-08-LIV-MCI",
+            "league": "Premier League",
+            "date": "2026-02-08",
+            "time": "22:00",
+            "home": "Liverpool",
+            "away": "Manchester City",
+            "venue": "Anfield, Liverpool"
+        },
+        {
+            "id": "PL-2026-02-10-CHE-LEE",
+            "league": "Premier League",
+            "date": "2026-02-10",
+            "time": "01:00",
+            "home": "Chelsea",
+            "away": "Leeds United",
+            "venue": "Stamford Bridge, London"
+        },
+        {
+            "id": "PL-2026-02-11-MCI-FUL",
+            "league": "Premier League",
+            "date": "2026-02-11",
+            "time": "01:00",
+            "home": "Manchester City",
+            "away": "Fulham",
+            "venue": "Etihad Stadium, Manchester"
+        },
+        {
+            "id": "PL-2026-02-22-TOT-ARS",
+            "league": "Premier League",
+            "date": "2026-02-22",
+            "time": "22:00",
+            "home": "Tottenham Hotspur",
+            "away": "Arsenal",
+            "venue": "Tottenham Hotspur Stadium, London"
+        },
+        {
+            "id": "PL-2026-02-23-EVE-MUN",
+            "league": "Premier League",
+            "date": "2026-02-23",
+            "time": "01:30",
+            "home": "Everton",
+            "away": "Manchester United",
+            "venue": "Goodison Park, Liverpool"
+        },
+        {
+            "id": "LL-2026-02-01-ELC-BAR",
+            "league": "La Liga",
+            "date": "2026-02-01",
+            "time": "TBD",
+            "home": "Elche",
+            "away": "Barcelona",
+            "venue": "Estadio Martínez Valero, Elche"
+        },
+        {
+            "id": "LL-2026-02-08-ATM-BET",
+            "league": "La Liga",
+            "date": "2026-02-08",
+            "time": "TBD",
+            "home": "Atletico Madrid",
+            "away": "Real Betis",
+            "venue": "Cívitas Metropolitano, Madrid"
+        },
+        {
+            "id": "LL-2026-02-15-RMA-RSO",
+            "league": "La Liga",
+            "date": "2026-02-15",
+            "time": "TBD",
+            "home": "Real Madrid",
+            "away": "Real Sociedad",
+            "venue": "Santiago Bernabéu, Madrid"
+        },
+        {
+            "id": "LL-2026-02-22-OSA-RMA",
+            "league": "La Liga",
+            "date": "2026-02-22",
+            "time": "TBD",
+            "home": "Osasuna",
+            "away": "Real Madrid",
+            "venue": "El Sadar, Pamplona"
+        },
+        {
+            "id": "LL-2026-02-22-BAR-LEV",
+            "league": "La Liga",
+            "date": "2026-02-22",
+            "time": "TBD",
+            "home": "Barcelona",
+            "away": "Levante",
+            "venue": "Spotify Camp Nou, Barcelona"
+        }
+    ]
+}
