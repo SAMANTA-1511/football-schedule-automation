@@ -4,15 +4,15 @@ pipeline {
     stages {
         stage('Build Image') {
             steps {
-                // Check if the quote is closed here
-                sh 'docker build -t football-schedule:latest .'
+                // We will use 'football-app' as the name everywhere
+                sh 'docker build -t football-app:latest .'
             }
         }
         stage('Run Container') {
             steps {
-                // We stop the old one first so there is no conflict
-                sh 'docker rm -f football-schedule-container || true'
-                sh 'docker run -d --name football-schedule-container -p 8081:80 foot-ball:latest'
+                // The '|| true' ignores the error if the container doesn't exist yet
+                sh 'docker rm -f football-container || true'
+                sh 'docker run -d --name football-container -p 8081:80 football-app:latest'
             }
         }
     }
