@@ -1,8 +1,14 @@
-# Use the lightweight Nginx web server
+# Stage 1: Build the app using Node.js
+FROM node:18-alpine AS build
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+RUN npm run build
+
+# Stage 2: Serve the app using Nginx
 FROM nginx:alpine
-
-# Copy all the files from your folder into the Nginx web folder
-COPY . /usr/share/nginx/html
-
-# Tell the container to listen on port 80
+# Copy the 'dist' folder from the build stage to the Nginx folder
+COPY --from=build /app/dist /usr/share/nginx/html
 EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
